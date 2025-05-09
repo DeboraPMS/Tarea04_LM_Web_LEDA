@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEDA - La Evolución Del Alma</title>
+    <link rel="icon" href="assets/ledafavic.ico">
+
+    <!-- JS Estilos -->
+    <script src="js/main.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mrs+Saint+Delafield&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruslan+Display&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <figure class="logo">
+            <img src="assets/ledaEvolucionBlancoTipo.png" alt="Logo LEDA - La Evolución Del Alma ">
+        </figure>
+    </header>
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="index.html" class="nav-menu-link" target="_self">INICIO</a></li>
+            <li class="nav-menu-item"><a href="astrologia.html" class="nav-menu-link" target="_self">ASTROLOGIA</a>
+                <ul class="nav-menu-2">
+                    <li class="nav-menu-item-2"><a href="astrologia_astros.html" target="_self"
+                            class="nav-menu-link-2">LOS ASTROS DICEN </a></li>
+                    <li class="nav-menu-item-2"><a href="astrologia_signos.html" target="_self"
+                            class="nav-menu-link-2">LOS SIGNOS</a></li>
+                    <li class="nav-menu-item-2"><a href="astrologia_planetas.html" target="_self"
+                            class="nav-menu-link-2">LOS PLANETAS</a></li>
+                    <li class="nav-menu-item-2"><a href="astrologia_casas.html" target="_self"
+                            class="nav-menu-link-2">LAS CASAS</a></li>
+                </ul>
+            </li>
+            <li class="nav-menu-item"><a href="numerologia.html" class="nav-menu-link" target="_self">NUMEROLOGIA</a>
+            </li>
+            <li class="nav-menu-item"><a href="calendario_maya.html" class="nav-menu-link" target="_self">CALENDARIO
+                    MAYA</a> </li>
+            <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link" target="_self">CONTACTO</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main class="mainContacto">
+        <section class="container" id="formulario-section">
+            <form id="form-contacto" aria-label="Formulario de contacto"  autocomplete="on">
+                <h1 id="contacto">CONTÁCTANOS</h1>
+                <fieldset class="bloques-datos">
+                    <legend>Cuéntanos sobre tí</legend>
+                    <label for="nombre">Nombre completo</label>
+                    <input class="camposTexto" type="text" id="nombre" autofocus name="nombre" placeholder="Nombre Apellido" required
+                        aria-required="true" pattern="[A-ZÁÉÍÓÚÑ a-záéíóúñ\s]+">
+                    <label for="email">Correo electrónico</label>
+                    <input  class="camposTexto" type="email" id="email" name="email" placeholder="usuario@dominio.com">
+                    <label for="telefono">Teléfono</label>
+                    <input class="camposTexto" type="tel" id="telefono" name="telefono" placeholder="+34 987654321" required
+                        pattern="(\+34\s?)?[0-9]{9}">
+                    <label for="respuesta">Tu mensaje</label><textarea id="respuesta" name="respuesta"
+                        placeholder="Cuéntanos tus inquietudes" rows="4" maxlength="500"></textarea>
+                </fieldset>
+                <fieldset class="bloques-datos">
+                    <legend>Tus datos de nacimiento</legend>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input class="camposTexto" type="date" id="fecha" name="fecha">
+                    <label for="hora">Hora de Nacimiento</label>
+                    <input class="camposTexto" type="time" id="hora" name="hora">
+                    <label for="lugar">Lugar de Nacimiento</label>
+                    <input class="camposTexto" type="text" id="lugar" name="lugar" placeholder="País, ciudad/población">
+                </fieldset>
+                <fieldset class="bloques-datos">
+                    <legend>¿Te gustaría realizar una consulta personalizada?</legend>
+                    <label for="consulta">Selecciona el tipo de consulta</label>
+                    <select name="consulta" id="consulta" required aria-required="true">
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="astrologia">Astrología</option>
+                        <option value="numerologia">Numerología</option>
+                        <option value="calendario_maya">Calendario Maya</option>
+                    </select>
+                    <label for="interes">¿Qué te interesa más?</label>
+                    <select name="intereses" id="interes" required aria-required="true">
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="carta_natal">Carta Natal</option>
+                        <option value="horoscopo">Horóscopo</option>
+                        <option value="compatibilidad">Compatibilidad</option>
+                        <option value="predicciones">Predicciones</option>
+                        <option value="numeros">Números</option>
+                        <option value="signos">Signos</option>
+                        <option value="planetas">Planetas</option>
+                        <option value="casas">Casas</option>
+                        <option value="calendario_maya">Calendario Maya</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="bloques-datos" id="feedbacks">
+                    <legend>¿Cómo te gustaría recibir tu feedback?</legend>
+                    <label class="radio"><input type="radio" name="sesion" value="presencial" required class="feedback" >Sesión
+                        presencial</label>
+                    <label class="radio"><input type="radio" name="sesion" value="virtual" class="feedback" >Sesión virtual</label>
+                    <label class="radio"><input type="radio" name="sesion" value="telefon" class="feedback" >Sesión
+                        telefónica</label>
+                </fieldset>
+                <label class="leyenda"><input type="checkbox" name="acepto" value="newsletter" >&nbsp; Deseo recibir información y promociones por
+                    e-mail</label>
+                <label class="leyenda"><input type="checkbox" name="acepto" value="acepto_terminos" required>&nbsp; He leído y acepto
+                    los <a href="terminos.html" class="termin" target="_blank">Términos y Condiciones</a></label>
+                  
+                <button type="submit">Enviar </button>
+            </form>
+        </section>
+        <section id="resumen-section" style="display: none;">
+            <h1>Resumen del correo</h1>
+            <div class="bloques-datos" id="resumen"></div><button onclick="window.location.reload()">Volver a editar</button>
+        </section>
+    </main>
+    <footer id="blanco">
+        <figure class="isoLogo" >
+            <a href="index.html"><img src="assets/ledaEvolucionBlanco20.png" alt="Logo LEDA - La Evolución Del Alma "></a>
+        </figure>
+        <p class="pie"><a href="terminos.html" class="terminos" target="_blank">Términos y Condiciones</a></p>
+        <address class="pie"><a href="contacto.html" class="terminos" target="_self">Email: ledaEvolucion@gmail.com  </a> &nbsp;   -  &nbsp;   Tel: 23456789 </address>
+        <p class="pie">Siguenos en <a href="https://www.instagram.com/demizavoi?utm_source=qr&igsh=MWt3djgxOWh3c3VidA==" target="_blank"> <img alt="Instagram" src="assets/logoInstBlanco.png"></a></p>
+    </footer>
+</body>
+
+</html>

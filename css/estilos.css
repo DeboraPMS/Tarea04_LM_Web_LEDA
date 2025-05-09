@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  height: 15vh;
+ /* min-height: 10vh;
+  max-height: 17vh;*/
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  
+}
+
+
+/* ------------------------- */
+/* Estilos de Menu */
+/* ------------------------- */
+
+/* Estilo de la barra horizontal (nav) */
+
+.nav {
+  display: inline-block;
+  left: 0px;
+  height: 4vh;
+  width: 100%;
+  background-color: rgb(28, 74, 182);
+  opacity: 90%;
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+
+
+/* Estilo de bloque del primer nivel */
+
+.nav-menu {
+  display: flex;
+  margin: 0;
+  padding: 0.7em 01em;
+  height: 4vh;
+  list-style: none;
+  justify-content: space-around;
+}
+
+/* Estilo de cada celda */
+.nav-menu-item {
+  float: left;
+  display:block;
+  margin: 0 1em;
+  line-height: 0.5em;
+  padding-top: 0.1em;
+}
+
+.nav-menu-link {
+  font-size:medium;
+  color: #ffff;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.nav-menu-punto {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu-punto.hovered {
+  color: rgb(6, 54, 226);
+  font-weight: bold;
+  text-shadow: rgba(49, 198, 198, 33) 0.1em 0.1em;}
+
+
+/* Estilo de cada enlace */
+.nav-menu-link {
+  padding: 1em 2em;
+  border-radius: 0.2em;
+}
+
+/* Estilo de cada enlace (sobre) */
+.nav-menu-link:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+/* Estilo de bloque del segundo nivel */
+.nav-menu-2 {
+  margin-top: .7em ;
+  display: none;
+  position: absolute;
+  background-color: rgba(6, 35, 167, 0.7);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.55);
+  border-radius: 0.5em;
+  z-index: 1;
+}
+
+/* Estilo de bloque del segundo nivel (sobre)*/
+.nav-menu-item:hover .nav-menu-2 {
+  display: block; 
+  box-shadow: 0 0.5em 1em rgba(6, 35, 167, 0.55);
+  border-radius: 0.5em;
+  z-index: 1;
+}
+
+/* Estilo de cada celda */
+.nav-menu-item-2:hover {
+  float: none;
+  
+}
+
+/* Estilo de cada enlace */
+.nav-menu-link-2:hover ul li{
+  text-align: left;
+  white-space: nowrap;
+  
+}
+
+/* Estilo de cada enlace (sobre) */
+.nav-menu-link-2:hover ul li a:hover {
+  background-color: rgba(10, 31, 81, 0.55);
+  border-radius: 0.5em;
+  transition: 0.5s;
+
+}
+
+.nav-menu-link-2:hover {
+  background-color:  rgba(28, 74, 182, .8); /* Un color diferente al hover del primer nivel */
+  border-radius: 0.3em;
+  color: rgb(45, 5, 45);
+  font-weight: bold;
+}
+
+/* Opcional: Ajustes para la lista dentro del segundo nivel */
+.nav-menu-2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu-2 li {
+  display: block; /* Asegura que los elementos del segundo nivel se apilen verticalmente */
+}
+
+.nav-menu-link-2 {
+  display: block; /* Hace que el enlace ocupe todo el ancho del li */
+  padding: 0.8em 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+/* ------------------------- */
+/* Estilos de Cuerpo Ppal */
+/* ------------------------- */
+
+.mainIndex {
+  height: 65vh;
+  background-image: url(../assets/AstroTransp20.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainAstros {
+  min-height: 65vh;
+  background-image: url(../assets/underConstruccion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainSignos {
+  height: 65vh;
+  background-image: url(../assets/cielito.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContacto {
+  min-height: 65vh;
+  background-image: url(../assets/PpalTransp20.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainConstruccion {
+  min-height: 65vh;
+  background-image: url(../assets/underConstruccion2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainTerminos {
+  min-height: 65vh;
+  background-image: url(../assets/PpalTransp20.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.creditos {
+  position: absolute; 
+  bottom: 17vh; 
+  right: 15vh; 
+  color: white;
+  font-size: smaller;
+
+}
+
+.construccion {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 2em;
+  color: #120763;
+  text-shadow: 5px 5px 15px #ffffff;
+}
+
+.construccionNombre {
+  text-align: center;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #120763;
+  text-shadow: 5px 5px 15px #ffffff;
+}
+
+.container {
+  opacity: 100% !important;
+  padding:3em 0em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: #26055d;
+  font-weight: bolder;
+  text-shadow: 0.1em 0.1em #fff;
+
+}
+
+.subtitulo {
+  margin: 0;
+  color: #000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 1.1em;
+  text-shadow: 0.1em 0.1em #fff;
+  line-height: 1.5em;
+
+}
+
+
+/* ------------------------- */
+/* Estilos de FormularioContacto */
+/* ------------------------- */
+
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form, #resumen-section {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.bloques-datos {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem ;
+  font-size: small;
+}
+
+label {
+  padding-top: 0.5em;
+  display: block;
+}
+
+.leyenda {
+  font-size: 0.6em;
+}
+
+.radio{
+  padding-right: 5em;
+
+}
+
+#feedbacks {
+  display: flex; 
+  flex-direction: column;
+}
+
+.termin{
+  justify-content: space-between;
+}
+
+.feedback {
+  padding: 5rem;
+  margin-right: 1rem;
+}
+
+.camposTexto, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #1740bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+dl {
+  margin-top: 1rem;
+}
+dt {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+dd {
+  margin-left: 1rem;
+}
+
+
+/* ------------------------- */
+/* Estilos de Footer */
+/* ------------------------- */
+
+.pie {
+  justify-items: center;
+  display: flex; 
+}
+
+.isoLogo {
+  height: 75%;
+}
+
+.instagram {
+  justify-content: center;
+  grid-row: span;
+  margin-left: 1em;
+}
+
+.terminos {
+  text-decoration: underline;
+  color: black;
+}
+
+#blanco {
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+  width: auto;
+  background: #fff;
+  
+}
+
+
+
+/* ------------------------- */
+/* Estilos de terminosycondiciones */
+/* ------------------------- */
+
+.textoLegal {
+  max-width: 80%;
+  margin: auto;
+  text-align: justify;
+  line-height: 1.5em;
+  color: #000;
+  padding: 2em;
+}
+
+.textoLegal p {
+  font-size: small;
+}
+
+
+
+
+
